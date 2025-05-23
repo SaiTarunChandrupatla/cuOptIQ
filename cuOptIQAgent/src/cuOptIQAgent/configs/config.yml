@@ -1,0 +1,49 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: INFO
+
+llms:
+  openai_llm:
+    _type: openai
+    model_name: "gpt-4"
+    temperature: 0
+    max_tokens: 1024
+    api_key: $OPENAI_API_KEY
+
+functions:
+  analyze_query_tool:
+    _type: analyze_query
+    llm_name: openai_llm
+  
+  data_modifier_tool:
+    _type: data_modifier
+    
+  cuopt_preparation_tool:
+    _type: cuopt_preparation
+    
+  cuopt_solver_tool:
+    _type: cuopt_solver
+    cuopt_api_key: $CUOPT_API_KEY
+    
+  visualization_tool:
+    _type: visualization
+    output_dir: "optimization_results"
+    
+  # Keep the original function for compatibility
+  cuopt_route_optimizer:
+    _type: cuOptIQAgent
+    cuopt_api_key: $CUOPT_API_KEY
+    llm_name: openai_llm
+    visualization_enabled: true
+    output_dir: "optimization_results"
+
+# Change workflow to directly use the cuOptIQAgent instead of react_agent
+workflow:
+  _type: cuOptIQAgent
+  cuopt_api_key: $CUOPT_API_KEY
+  llm_name: openai_llm
+  visualization_enabled: true
+  output_dir: "optimization_results"
