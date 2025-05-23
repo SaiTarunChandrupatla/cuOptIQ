@@ -2,7 +2,7 @@
 
 ![NVIDIA Agent Toolkit Hackathon](https://img.shields.io/badge/NVIDIA-Agent%20Toolkit%20Hackathon-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
-#https://developer.nvidia.com/agentiq-hackathon
+https://developer.nvidia.com/agentiq-hackathon
 
 ## Overview
 
@@ -31,8 +31,8 @@ Before you begin using AIQ toolkit, ensure that you meet the following software 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/NVIDIA/cuOptIQAgent.git
-cd cuOptIQAgent
+git clone https://github.com/SaiTarunChandrupatla/cuOptIQ.git
+cd cuOptIQ
 ``` 
 
 2. Set up the Python environment:
@@ -62,14 +62,14 @@ Get your NVIDIA NIM Cuopt API key from https://build.nvidia.com/
 
 5. Start the agent:
 ```bash
-aiq serve --config_file cuOptIQAgent/configs/config.yml --host 0.0.0.0 
+aiq serve --config_file configs/config.yml --host 0.0.0.0 
 ``` 
 
 6. Start the UI:
 ```bash
 cd aiqtoolkit-opensource-ui
-
-npm ci( dependency installation)
+#(dependency installation)
+npm ci 
 
 npm run dev
 ``` 
