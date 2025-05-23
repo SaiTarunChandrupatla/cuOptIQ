@@ -74,5 +74,19 @@ npm ci
 npm run dev
 ``` 
 
+7. Example Usage:
+```bash
+I want optimized routes for 3 forklifts to deliver materials from storage locations to trucks. Each forklift should carry 2 items at a time.
+
+Please plan the most efficient routes for 2 forklifts to transport materials from storage zones to the trucks, with each forklift limited to carrying 3 items
+
+Remove first two orders and optimize routes for 3 forklifts to deliver materials from storage locations to trucks. Each forklift should carry 2 items at a time.
+
+Add two more orders same as the first two order in the data and give me the optimized routes for 4 forklifts to deliver materials from storage locations to trucks. Each forklift should carry 2 items at a time.
+```
+
+![cuOptIQ Demo](assets/linkedincuopt.png)
+![Factory Layout](assets/factory_layout.png)
+
 
 
