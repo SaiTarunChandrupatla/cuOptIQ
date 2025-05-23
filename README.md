@@ -85,8 +85,13 @@ Remove first two orders and optimize routes for 3 forklifts to deliver materials
 Add two more orders same as the first two order in the data and give me the optimized routes for 4 forklifts to deliver materials from storage locations to trucks. Each forklift should carry 2 items at a time.
 ```
 
-![cuOptIQ Demo](assets/linkedincuopt.png)
 ![Factory Layout](assets/factory_layout.png)
+![cuOptIQ Demo](assets/1.png)
+![cuOptIQ Demo](assets/2.png)
+![cuOptIQ Demo](assets/3.png)
+![cuOptIQ Demo](assets/4.png)
+![cuOptIQ Demo](assets/5.png)
+
 
 
 
